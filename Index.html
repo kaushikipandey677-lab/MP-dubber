@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP dubber | Purple Energy. Infinite Anime.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#050505',
+                        deepVoid: '#12071C',
+                        midnight: '#1A102B',
+                        electricPurple: '#8A2EFF',
+                        neonGlow: '#B026FF',
+                        magentaSoft: '#D946EF',
+                        cyanAccent: '#22D3EE'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .neon-glow {
+            text-shadow: 0 0 20px rgba(176, 38, 255, 0.6);
+        }
+        .glass-panel {
+            background: rgba(26, 16, 43, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(138, 46, 255, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(138, 46, 255, 0.25) 0%, rgba(18, 7, 28, 0.8) 50%, #050505 100%);
+        }
+    </style>
+</head>
+<body class="bg-void text-white min-h-screen">
+
+    <!-- Cinematic Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-purple-900/30 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-electricPurple via-neonGlow to-magentaSoft neon-glow">
+                    MP DUBBER
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
+                    <a href="#" class="hover:text-neonGlow transition">Home</a>
+                    <a href="#" class="hover:text-neonGlow transition">Trending</a>
+                    <a href="#" class="hover:text-neonGlow transition">New Anime</a>
+                    <a href="#" class="hover:text-neonGlow transition">Library</a>
+                    <a href="#" class="hover:text-neonGlow transition">Movies</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="p-2 rounded-full glass-panel hover:border-electricPurple transition">
+                    <svg class="w-5 h-5 text-neonGlow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </button>
+                <button class="px-5 py-2 rounded-xl bg-gradient-to-r from-electricPurple to-neonGlow text-white font-semibold shadow-lg shadow-purple-900/40 hover:scale-105 transition">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full glass-panel border border-purple-500/30 text-xs font-semibold text-neonGlow uppercase tracking-widest">
+                    <span>🔥 #1 Dubbed Anime Ecosystem</span>
+                </div>
+                <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight leading-none">
+                    Purple Energy. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricPurple to-magentaSoft neon-glow">Infinite Anime.</span>
+                </h1>
+                <p class="text-gray-300 text-lg max-w-xl font-light">
+                    Experience the next generation of cinematic anime streaming. High-tech interface, immersive dark-void neon atmosphere, and lightning-fast dual audio experience.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button class="px-8 py-4 rounded-xl bg-gradient-to-r from-electricPurple to-neonGlow text-white font-bold text-lg shadow-xl shadow-electricPurple/30 hover:scale-105 transition flex items-center space-x-3">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <span>Watch Now</span>
+                    </button>
+                    <button class="px-8 py-4 rounded-xl glass-panel text-white font-bold text-lg hover:border-electricPurple transition">
+                        Explore Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Featured Poster Card Preview -->
+            <div class="relative group flex justify-center">
+                <div class="absolute -inset-1 bg-gradient-to-r from-electricPurple to-magentaSoft rounded-2xl blur-xl opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                <div class="relative glass-panel rounded-2xl p-4 w-full max-w-md overflow-hidden border border-purple-500/30 shadow-2xl">
+                    <div class="h-96 rounded-xl bg-gradient-to-b from-purple-900/40 to-black overflow-hidden relative flex items-end p-6">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="relative z-10 space-y-2">
+                            <span class="px-2.5 py-1 rounded bg-electricPurple/80 text-xs font-bold uppercase tracking-wider">Trending #1</span>
+                            <h3 class="text-2xl font-bold">Grand Dragon Phoenix</h3>
+                            <p class="text-xs text-gray-300 line-clamp-2">The epic conflict spanning the dragon and phoenix lineages enters on the civil war...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-wide border-l-4 border-electricPurple pl-4">Popular Dubbed Shows</h2>
+            <a href="#" class="text-sm font-semibold text-neonGlow hover:underline">View All &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="glass-panel rounded-xl overflow-hidden group hover:border-electricPurple transition duration-300">
+                <div class="h-64 bg-purple-950 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Anime">
+                    <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80"></div>
+                    <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur text-xs text-neonGlow font-bold">Dub / Sub</span>
+                </div>
+                <div class="p-4 space-y-1">
+                    <h4 class="font-bold text-sm truncate">Swallowed Star</h4>
+                    <p class="text-xs text-gray-400">Episode 64 - Action / Sci-Fi</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="glass-panel rounded-xl overflow-hidden group hover:border-electricPurple transition duration-300">
+                <div class="h-64 bg-purple-950 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Anime">
+                    <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80"></div>
+                    <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur text-xs text-neonGlow font-bold">Hindi Dub</span>
+                </div>
+                <div class="p-4 space-y-1">
+                    <h4 class="font-bold text-sm truncate">Renegade Immortal</h4>
+                    <p class="text-xs text-gray-400">Episode 98 - Fantasy</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="glass-panel rounded-xl overflow-hidden group hover:border-electricPurple transition duration-300">
+                <div class="h-64 bg-purple-950 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Anime">
+                    <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80"></div>
+                    <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur text-xs text-neonGlow font-bold">Dub / Sub</span>
+                </div>
+                <div class="p-4 space-y-1">
+                    <h4 class="font-bold text-sm truncate">Perfect World</h4>
+                    <p class="text-xs text-gray-400">Episode 140 - Action</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="glass-panel rounded-xl overflow-hidden group hover:border-electricPurple transition duration-300">
+                <div class="h-64 bg-purple-950 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Anime">
+                    <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80"></div>
+                    <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur text-xs text-neonGlow font-bold">Hindi Dub</span>
+                </div>
+                <div class="p-4 space-y-1">
+                    <h4 class="font-bold text-sm truncate">Battle Through The Heavens</h4>
+                    <p class="text-xs text-gray-400">Season 5 - Special</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-purple-900/30 bg-deepVoid py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>&copy; 2026 MP dubber Studio. All rights reserved. Powered by Purple Energy.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-neonGlow">Privacy Policy</a>
+                <a href="#" class="hover:text-neonGlow">Terms of Service</a>
+                <a href="#" class="hover:text-neonGlow">DMCA</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
